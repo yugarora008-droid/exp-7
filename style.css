@@ -1,0 +1,46 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+} 
+ 
+body { 
+    background-color: #f5f6fa; 
+    font-family: Arial, sans-serif; 
+} 
+ 
+.navbar { 
+    height: 70px; 
+    flex-shrink: 0; 
+} 
+ 
+.main-content { 
+    height: calc(100vh - 70px); 
+    overflow-y: auto; 
+} 
+ 
+.card { 
+    border: none; 
+    border-radius: 10px; 
+} 
+ 
+.note-card { 
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    height: 100%; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+} 
+ 
+.note-card h5 { 
+    color: #356ac3; 
+} 
+ 
+.note-card p { 
+    color: #555; 
+} 
+ 
+button { 
+    cursor: pointer; 
+} 

@@ -1,0 +1,84 @@
+ <!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>My Notes App</title> 
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"> 
+ 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+ 
+<body> 
+ 
+    <nav class="navbar bg-white shadow-sm"> 
+        <div class="container"> 
+            <a class="navbar-brand fw-bold" href="#"> 
+                My Notes 
+            </a> 
+        </div> 
+    </nav> 
+ 
+    <main class="main-content container py-4"> 
+ 
+        <div class="row g-3 mb-3"> 
+ 
+            <div class="col-md-8"> 
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="form-control" 
+                    placeholder="Search your notes..."  
+ 
+                > 
+            </div> 
+ 
+            <div class="col-md-4"> 
+                <button 
+                    class="btn btn-primary w-100" 
+                    id="addBtn" 
+                > 
+                    + Add Note 
+                </button> 
+            </div> 
+ 
+        </div> 
+ 
+        <div class="card p-3 mb-4" id="noteForm"> 
+ 
+            <input 
+                type="text" 
+                id="titleInput" 
+                class="form-control mb-3" 
+                placeholder="Enter note title" 
+            > 
+ 
+            <textarea 
+                id="contentInput" 
+                class="form-control mb-3" 
+                placeholder="Write your note..." 
+                rows="3" 
+            ></textarea> 
+ 
+            <button class="btn btn-success" id="saveBtn"> 
+                Save Note 
+            </button> 
+ 
+        </div> 
+ 
+        <h2 class="h4 mb-3">Your Notes</h2> 
+ 
+        <div class="row g-4" id="notesContainer"> 
+ 
+        </div> 
+ 
+    </main> 
+ 
+    <script src="script.js"></script> 
+ 
+</body> 
+</html>
+
